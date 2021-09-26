@@ -17,10 +17,7 @@ public class UploadController {
 	public void uploadForm() {
 		log.info("upload form");
 	}
-	@GetMapping("/uploadAjax")
-	public void uploadAjax() {
-		log.info("upload ajax");
-	}
+	
 	@PostMapping("/uploadFormAction")
 	public void uploadFormPost(MultipartFile[] uploadFile, Model model) {
 		
@@ -37,7 +34,7 @@ public class UploadController {
 			multipartFile.transferTo(saveFile);
 		} catch(Exception e) {
 			log.error(e.getMessage());
-		} // end catch
-		} // end for
+		}
+		}
 	}
 }

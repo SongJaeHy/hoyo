@@ -1,7 +1,5 @@
 package com.damoyo.controller;
 
-import java.io.File;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,27 +15,15 @@ public class UploadController {
 	public void uploadForm() {
 		log.info("upload form");
 	}
-	@GetMapping("/uploadAjax")
-	public void uploadAjax() {
-		log.info("upload ajax");
-	}
+	
 	@PostMapping("/uploadFormAction")
 	public void uploadFormPost(MultipartFile[] uploadFile, Model model) {
-		
-		String uploadFolder = "C:\\upload";
 		
 		for(MultipartFile multipartFile: uploadFile) {
 			log.info("--------------");
 			log.info("Upload File Name: " + multipartFile.getOriginalFilename());
 			log.info("Upload File Size: " + multipartFile.getSize());
-		
-		File saveFile= new File(uploadFolder, multipartFile.getOriginalFilename());
-		
-		try {
-			multipartFile.transferTo(saveFile);
-		} catch(Exception e) {
-			log.error(e.getMessage());
-		} // end catch
-		} // end for
+			
+		}
 	}
 }
