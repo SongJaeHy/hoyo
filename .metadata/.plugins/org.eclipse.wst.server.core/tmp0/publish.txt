@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Sun Sep 26 23:12:34 KST 2021
+#Mon Sep 27 17:23:40 KST 2021
 org.eclipse.jst.jee.server\:SpringdomoPrj=C\:\\Users\\\uC7AC\uD604\\Downloads\\apache-tomcat-9.0.53\\apache-tomcat-9.0.53\\wtpwebapps\\SpringdomoPrj
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\\uC7AC\uD604\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\Users\\\uC7AC\uD604\\Downloads\\apache-tomcat-9.0.53\\apache-tomcat-9.0.53\\wtpwebapps\\SpringdomoPrj\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar

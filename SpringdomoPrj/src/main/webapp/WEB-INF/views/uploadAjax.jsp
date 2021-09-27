@@ -44,7 +44,7 @@ $(document).ready(function(){
 			success: function(result){
 				alert("Uploaded");
 			}
-		}) //$.ajax
+		}); //$.ajax
 	});
 });
 </script>

@@ -12,6 +12,10 @@
 	<input type='file' name='uploadFile' multiple>
 	<button>Submit</button>
 	</form>
+	<div class='uploadDiv'>
+		<input type='file' name='uploadFile' multiple>
+	</div>
 	
+	<button id='uploadBtn'>Upload</button>
 </body>
 </html>
